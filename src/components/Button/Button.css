@@ -1,0 +1,36 @@
+.Button, .ButtonLink {
+    width: 160px;
+    min-height: 38px;
+    padding: 6px 16px;
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 50px;
+    transition: background .3s ease-in;
+    outline: none;
+}
+
+.ButtonLink {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonDefault {
+    border: 2px solid #f8f9fa;
+    color: #fff;
+}
+
+.buttonDefault:hover {
+    background: #f8f9fa;
+    color: #272736;
+}
+
+.buttonPrimary {
+    border: 2px solid #f3cd08;
+    color: #272736;
+}
+
+.buttonPrimary:hover {
+    background: #f3cd08;
+}

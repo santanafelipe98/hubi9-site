@@ -1,0 +1,38 @@
+.Header {
+    background: #600ab3;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbarFixed {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.Header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header .brand img {
+    width: 100px;
+}
+
+.Header .navbarNav .navbarNavLink {
+    font-size: 15px;
+    padding: 10px 0;
+    margin: 2px 12px;
+    color: rgba(233,236,239,.9);
+    transition: color .3s ease-in;
+}
+
+
+.Header .navbarNav .navbarNavLink:hover {
+    color: rgba(255, 255, 255, 1);
+}

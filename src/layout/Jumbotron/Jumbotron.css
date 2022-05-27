@@ -1,0 +1,24 @@
+.Jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    height: 100vh;
+}
+
+.Jumbotron .heading {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.Jumbotron .description {
+    width: 550px;
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+
+.Jumbotron .jumbotronButton:not(:last-child) {
+    margin-right: 16px;
+}
