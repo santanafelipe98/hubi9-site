@@ -17,8 +17,8 @@ const Button = props => {
         return classes
     }, [ props.variant, props.className ])
 
-    (
-        <button className={ className } { ...props }>
+    return (
+        <button { ...props } className={ className }>
             {
                 props.children
             }

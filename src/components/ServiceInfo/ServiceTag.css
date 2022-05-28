@@ -1,0 +1,22 @@
+.ServiceTag {
+    width: 40%;
+    margin-top: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
+    display: flex;
+    padding: 18px 32px 18px 24px;
+    align-items: center;
+    border-radius: 12px;
+    background-image: linear-gradient(90deg,#343a40,#2c2c31);
+    box-shadow: 3px 3px 12px 2px rgba(0,0,0,.4);
+}
+
+.ServiceTag .serviceTagIcon {
+    margin-right: 24px;
+}
+
+.ServiceTag .text {
+    color: #e9ecef;
+    font-size: 18px;
+    text-align: left;
+}

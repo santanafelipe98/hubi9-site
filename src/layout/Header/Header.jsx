@@ -17,7 +17,7 @@ const Header = props => {
         <header className={ className }>
             <div className="container">
                 <div className="brand">
-                    <a href="#"><img src="/images/logo.svg" alt="Logotipo Hubi9" /></a>
+                    <a href="#"><img src={ `${process.env.PUBLIC_URL}/images/logo.svg` } alt="Logotipo Hubi9" /></a>
                 </div>
                 <nav className="navbarNav">
                     <a href="#" className="navbarNavLink">Serviços</a>

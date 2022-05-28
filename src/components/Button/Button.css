@@ -8,6 +8,8 @@
     border-radius: 50px;
     transition: background .3s ease-in;
     outline: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
 }
 
 .ButtonLink {
