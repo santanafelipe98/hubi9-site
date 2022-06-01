@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hubi9-site/static/css/main.a1062008.css",
-    "main.js": "/hubi9-site/static/js/main.66d03a28.js",
+    "main.css": "/hubi9-site/static/css/main.22039714.css",
+    "main.js": "/hubi9-site/static/js/main.c740cbec.js",
     "static/js/787.756747f9.chunk.js": "/hubi9-site/static/js/787.756747f9.chunk.js",
     "index.html": "/hubi9-site/index.html",
-    "main.a1062008.css.map": "/hubi9-site/static/css/main.a1062008.css.map",
-    "main.66d03a28.js.map": "/hubi9-site/static/js/main.66d03a28.js.map",
+    "main.22039714.css.map": "/hubi9-site/static/css/main.22039714.css.map",
+    "main.c740cbec.js.map": "/hubi9-site/static/js/main.c740cbec.js.map",
     "787.756747f9.chunk.js.map": "/hubi9-site/static/js/787.756747f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1062008.css",
-    "static/js/main.66d03a28.js"
+    "static/css/main.22039714.css",
+    "static/js/main.c740cbec.js"
   ]
 }
