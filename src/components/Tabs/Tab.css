@@ -1,0 +1,13 @@
+.Tab {
+    padding: 5px 25px;
+    display: inline-flex;
+    background: #E5E1E6;
+    transition: color .3s ease-in;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #101820;
+}
+
+.Tab.active {
+    color: #E81F76;
+}

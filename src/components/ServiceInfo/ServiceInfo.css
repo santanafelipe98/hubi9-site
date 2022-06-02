@@ -12,9 +12,14 @@
     transition: border-color .6s ease;
 }
 
+.ServiceInfo:hover {
+    border-color: var(--primary-color);
+}
+
 .ServiceInfo .heading {
     padding: 6px 18px;
-    border-bottom: 2px solid #0097d8;
+    border-bottom: 2px solid var(--primary-color);
+    color: #f8f9fa;
     font-size: 15px;
     text-transform: uppercase;
 }
@@ -23,11 +28,13 @@
     margin-bottom: 12px;
     font-size: 38px;
     width: 66%;
+    color: #f8f9fa;
 }
 
 .ServiceInfo .serviceInfoSubtitle {
     font-size: 24px;
     font-weight: 400;
+    color: var(--primary-color);
 }
 
 .ServiceInfo .serviceInfoDescription {
@@ -35,6 +42,7 @@
     margin-top: 32px;
     margin-bottom: 24px;
     font-size: 16px;
+    color: #f8f9fa;
 }
 
 .ServiceInfo .serviceInfoTags {

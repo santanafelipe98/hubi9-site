@@ -1,0 +1,6 @@
+.OurServices {
+    background: #212529;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}

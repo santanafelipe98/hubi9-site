@@ -17,11 +17,12 @@ const Header = props => {
         <header className={ className }>
             <div className="container">
                 <div className="brand">
-                    <a href="#"><img src={ `${process.env.PUBLIC_URL}/images/logo.svg` } alt="Logotipo Hubi9" /></a>
+                    <a href="/"><img src={ `${process.env.PUBLIC_URL}/images/logo.png` } alt="Logotipo Hubi9" /></a>
                 </div>
                 <nav className="navbarNav">
-                    <a href="#" className="navbarNavLink">Serviços</a>
+                    <a href="/servicos" className="navbarNavLink">Serviços</a>
                     <a href="#" className="navbarNavLink">Cases</a>
+                    <a href="/contato" className="navbarNavLink">Contato</a>
                 </nav>
             </div>
         </header>

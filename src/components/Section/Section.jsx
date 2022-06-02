@@ -5,7 +5,6 @@ import './Section.css'
 import PropTypes from 'prop-types'
 
 const Section = props => {
-
     const containerClass = useMemo(() => {
         if (props.fluid)
             return 'container-fluid'
@@ -14,7 +13,7 @@ const Section = props => {
     }, [ props.fluid ])
 
     return (
-        <section className="Section">
+        <section className={ `${ props.className || '' } Section` }>
             <h2 className="sectionTitle">{ props.title }</h2>
             <div className={ containerClass }>
                 { props.children }
@@ -24,6 +23,7 @@ const Section = props => {
 }
 
 Section.propTypes = {
+    className: PropTypes.string,
     title: PropTypes.string,
     fluid: PropTypes.bool
 }

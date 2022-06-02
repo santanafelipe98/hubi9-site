@@ -1,5 +1,7 @@
 .Section {
     padding-bottom: 89px;
+    display: flex;
+    flex-direction: column;
 }
 
 .Section .sectionTitle {

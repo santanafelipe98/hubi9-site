@@ -5,11 +5,15 @@ import './Button.css'
 
 const ButtonLink = props => {
     const className = useMemo(() => {
-        let classes = `${props.className} ButtonLink`
+        let classes = `${props.className || ''} ButtonLink`
 
         switch (props.variant) {
             case 'primary':
                 classes += ' buttonPrimary'
+                break
+            case 'secondary':
+                classes += ' buttonSecondary'
+                break
             default:
                 classes += ' buttonDefault'
         }
@@ -29,7 +33,7 @@ ButtonLink.defaultProps = {
 
 ButtonLink.propTypes = {
     className: PropTypes.string,
-    variant: PropTypes.oneOf([ 'default', 'primary' ]),
+    variant: PropTypes.oneOf([ 'default', 'primary', 'secondary' ]),
     to: PropTypes.string
 }
 

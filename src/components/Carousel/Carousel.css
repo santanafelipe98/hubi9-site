@@ -1,0 +1,43 @@
+.Carousel {
+    width: 100%;
+    max-width: 900px;
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Carousel .slide {
+    width: 100%;
+    max-width: 900px;
+    min-height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.dot:not(:last-child) {
+    margin-right: 16px;
+}
+
+.dot {
+    cursor: pointer;
+    background: rgba(34,34,34,.4);
+    transition: background .3s ease-in;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
+
+.dot.active {
+    background: #222;
+}
+

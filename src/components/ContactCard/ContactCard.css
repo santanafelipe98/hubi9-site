@@ -1,0 +1,29 @@
+.ContactCard {
+    border: 1px solid #333;
+    border-radius: 10px 40px 10px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: border-color .3s ease-in, transform .3s ease;
+}
+
+.ContactCard:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+}
+
+.contactCardTitle {
+    margin-top: .5rem;
+    margin: 1rem 0;
+}
+
+.contactCardTitle a {
+    color: #333;
+    transition: color .3s ease-in;
+}
+
+.contactCardTitle a:hover {
+    color: var(--primary-color);
+}

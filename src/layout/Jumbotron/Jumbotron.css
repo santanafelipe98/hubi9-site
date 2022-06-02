@@ -6,19 +6,39 @@
     text-align: center;
     min-height: 500px;
     height: 100vh;
+    overflow: hidden;
 }
 
 .Jumbotron .heading {
     font-size: 48px;
     margin-bottom: 24px;
+    color: #e9ecef;
 }
 
 .Jumbotron .description {
     width: 550px;
     margin-bottom: 24px;
     font-size: 15px;
+    color: rgba(233,236,239,.8);
 }
 
 .Jumbotron .jumbotronButton:not(:last-child) {
     margin-right: 16px;
+}
+
+.Jumbotron .backgroundVideo {
+    min-height: 600px;
+    position: absolute;
+    z-index: -100;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background: transparent;
+    background-image: linear-gradient(180deg,rgba(44,44,49,0),#212529 95%),linear-gradient(180deg,rgba(48,48,64,.75),rgba(48,48,64,.75)),linear-gradient(0deg,rgba(52,58,64,.4),rgba(0,151,216,.4));
+    overflow: hidden;
+}
+
+
+.Jumbotron .backgroundVideo video {
+    opacity: .1;
 }

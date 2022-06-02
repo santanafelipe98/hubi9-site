@@ -5,11 +5,15 @@ import PropTypes from 'prop-types'
 const Button = props => {
     
     const className = useMemo(() => {
-        let classes = `${props.className} Button`
+        let classes = `${props.className || ''} Button`
 
         switch (props.variant) {
             case 'primary':
                 classes += ' buttonPrimary'
+                break
+            case 'secondary':
+                classes += ' buttonSecondary'
+                break
             default:
                 classes += ' buttonDefault'
         }
@@ -32,7 +36,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
     className: PropTypes.string,
-    variant: PropTypes.oneOf(['default', 'primary'])
+    variant: PropTypes.oneOf(['default', 'primary', 'secondary'])
 }
 
 export default Button
