@@ -1,0 +1,54 @@
+.serviceDetailsHeader {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.serviceDetailsHeading {
+    width: 750px;
+    font-size: 40px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #f8f9fa;
+    text-align: center;
+}
+
+.serviceDetailsDesc {
+    background: var(--primary-color);
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceDetailsDesc p {
+    width: 750px;
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: rgba(248,249,250,.8);
+    font-weight: 400;
+    text-align: center;
+    line-height: 150%;
+}
+
+.ServiceDetails .tags {
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    margin-bottom: 56px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.ServiceDetails .tags .Tag {
+    margin-right: 12px;
+    margin-bottom: 6px;
+}
+
+.ServiceDetails .btnAction {
+    font-size: 17px;
+    padding: 6px 20px;
+}

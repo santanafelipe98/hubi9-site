@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import ServiceTag from './ServiceTag'
 import {Button} from '../Button'

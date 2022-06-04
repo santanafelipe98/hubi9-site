@@ -26,14 +26,7 @@
 }
 
 .Header .navbarNav .navbarNavLink {
-    font-size: 15px;
-    padding: 10px 0;
     margin: 2px 12px;
-    color: rgba(233,236,239,.9);
-    transition: color .3s ease-in;
-}
-
-
-.Header .navbarNav .navbarNavLink:hover {
-    color: rgba(255, 255, 255, 1);
+    width: auto;
+    min-width: auto;
 }

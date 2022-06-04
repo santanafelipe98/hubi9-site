@@ -1,0 +1,13 @@
+.FloatingActionButton {
+    position: fixed;
+    width: 58px;
+    height: 58px;
+    border-radius: 29px;
+    background: var(--primary-color);
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .3);
+}

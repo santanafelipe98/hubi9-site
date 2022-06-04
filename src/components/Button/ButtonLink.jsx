@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 
 import './Button.css'
+import { Link } from 'react-router-dom'
 
 const ButtonLink = props => {
     const className = useMemo(() => {
@@ -22,7 +23,7 @@ const ButtonLink = props => {
     }, [ props.variant, props.className ])
 
     return (
-        <a className={className}  href={props.to}>{ props.children }</a>
+        <Link className={className}  to={props.to}>{ props.children }</Link>
     )
 }
 

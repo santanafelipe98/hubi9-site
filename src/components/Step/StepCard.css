@@ -1,0 +1,17 @@
+.StepCard {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 20px 60px 20px 20px;
+}
+
+.stepCardTitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.stepCardText {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6em;
+}

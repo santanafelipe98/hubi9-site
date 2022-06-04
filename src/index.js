@@ -9,17 +9,16 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 
-import { unstable_HistoryRouter as HistoryRouter } from 'react-router-dom'
-import { createBrowserHistory } from 'history'
+import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 library.add(fas,fab, far)
 
 root.render(
   <React.StrictMode>
-    <HistoryRouter history={createBrowserHistory}>
+    <BrowserRouter basename={ `${process.env.PUBLIC_URL}` }>
       <App />
-    </HistoryRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

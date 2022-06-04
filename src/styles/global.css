@@ -1,0 +1,4 @@
+.banner {
+    transition: height .3s ease-in-out;
+    display: flex;
+}

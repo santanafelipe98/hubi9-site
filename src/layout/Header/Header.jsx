@@ -1,4 +1,6 @@
 import React, { useMemo } from 'react'
+import { ButtonLink } from '../../components/Button'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 import PropTypes from 'prop-types'
@@ -17,12 +19,12 @@ const Header = props => {
         <header className={ className }>
             <div className="container">
                 <div className="brand">
-                    <a href="/"><img src={ `${process.env.PUBLIC_URL}/images/logo.png` } alt="Logotipo Hubi9" /></a>
+                    <Link to="/"><img src={ `${process.env.PUBLIC_URL}/images/logotipo_colorido.png` } alt="Logotipo Hubi9" /></Link>
                 </div>
                 <nav className="navbarNav">
-                    <a href="/servicos" className="navbarNavLink">Serviços</a>
-                    <a href="#" className="navbarNavLink">Cases</a>
-                    <a href="/contato" className="navbarNavLink">Contato</a>
+                    <ButtonLink className="navbarNavLink" variant="primary" to="/servicos">Serviços</ButtonLink>
+                    <ButtonLink className="navbarNavLink" variant="primary" to="#">Cases</ButtonLink>
+                    <ButtonLink className="navbarNavLink" variant="primary" to="/contato">Contato</ButtonLink>
                 </nav>
             </div>
         </header>
