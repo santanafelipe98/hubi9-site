@@ -24,6 +24,11 @@
     text-transform: uppercase;
 }
 
+.ServiceInfo .ButtonLink {
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
 .ServiceInfo .serviceInfoTitle {
     margin-bottom: 12px;
     font-size: 38px;
@@ -56,4 +61,39 @@
     width: 220px;
     margin-top: 48px;
     font-size: 16px;
+}
+
+@media screen and (max-width: 767.8px) {
+    .ServiceInfo {
+        width: 100%;
+    }
+
+    .ServiceInfo .serviceInfoTitle {
+        width: 80%;
+        margin-bottom: 8px;
+        font-size: 28px;
+    }
+
+    .ServiceInfo .serviceInfoDescription {
+        width: 450px;
+        font-size: 15px;
+    }
+
+    .ServiceInfo .serviceInfoTags {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 559.8px) {
+    .ServiceInfo .serviceInfoDescription {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .ServiceInfo .ButtonLink {
+        align-self: inherit;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }

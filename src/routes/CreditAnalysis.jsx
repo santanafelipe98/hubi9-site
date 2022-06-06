@@ -2,6 +2,7 @@ import React, { useCallback, useMemo, useState } from 'react'
 import '../styles/global.css'
 import ServiceDetails from '../components/ServiceDetails'
 import { ServiceInfo } from '../components/ServiceInfo'
+import GoToTop from '../components/GoToTop'
 
 const IMAGE_URL = `${process.env.PUBLIC_URL}/images/analise_de_credito.png`
 
@@ -64,6 +65,7 @@ const CreditAnalysis = props => {
                         )
                 }
             </div>
+            <GoToTop />
         </>
     )
 }

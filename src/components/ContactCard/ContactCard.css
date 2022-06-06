@@ -19,6 +19,14 @@
     margin: 1rem 0;
 }
 
+.contactCardTitle, .contactCardText {
+    text-align: center;
+}
+
+.contactCardText {
+    font-size: 15px;
+}
+
 .contactCardTitle a {
     color: #333;
     transition: color .3s ease-in;
@@ -27,3 +35,10 @@
 .contactCardTitle a:hover {
     color: var(--primary-color);
 }
+
+@media screen and (max-width: 967.8px) {
+    .ContactCard {
+        margin-bottom: 20px;
+    }
+}
+

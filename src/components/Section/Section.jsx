@@ -14,7 +14,7 @@ const Section = props => {
 
     return (
         <section className={ `${ props.className || '' } Section` }>
-            <h2 className="sectionTitle">{ props.title }</h2>
+            <h2 className={`sectionTitle ${props.theme || 'dark'}`}>{ props.title }</h2>
             <div className={ containerClass }>
                 { props.children }
             </div>
@@ -25,7 +25,12 @@ const Section = props => {
 Section.propTypes = {
     className: PropTypes.string,
     title: PropTypes.string,
-    fluid: PropTypes.bool
+    fluid: PropTypes.bool,
+    theme: PropTypes.oneOf([ 'light', 'dark' ])
+}
+
+Section.defaultProps = {
+    theme: 'dark'
 }
 
 export default Section

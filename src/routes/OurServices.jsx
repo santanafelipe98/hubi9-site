@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react'
 import '../styles/OurServices.css'
 
+import PropTypes from 'prop-types'
+
 import Section from '../components/Section'
 import Card from '../components/Card'
-
-import { ServiceInfo } from '../components/ServiceInfo'
+import GoToTop from '../components/GoToTop'
 
 const OurServices = props => {
     const styles = useMemo(() => ({
@@ -15,31 +16,31 @@ const OurServices = props => {
     }), [])
 
     return (
-        <div style={styles} className="OurServices">
+        <div style={styles} className={`OurServices ${props.asPage ? 'asPage' : ''}`}>
             <Section title="Nossos serviços">
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-12 col-lg-3">
                         <Card
                             title="Análise de Crédito"
                             description="Entendemos problemas e apontamos caminhos"
                             imageUrl={ `${process.env.PUBLIC_URL }/images/analise_de_credito.png` }
                             buttonLinkUrl="/servicos/analise-de-credito" />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-12 col-lg-3">
                         <Card
                             title="Recuperação de Recebíveis"
                             description="Somos especialistas em desenvolvimento"
                             imageUrl={ `${process.env.PUBLIC_URL}/images/recuperacao_de_recebiveis.png` }
                             buttonLinkUrl="/servicos/recuperacao-de-recebiveis" />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-12 col-lg-3">
                         <Card
                             title="Protesto de Títulos"
                             description="Somos especialistas em desenvolvimento"
                             imageUrl={ `${process.env.PUBLIC_URL}/images/protesto_de_titulos.png` }
                             buttonLinkUrl="/servicos/protesto-de-titulos" />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-12 col-lg-3">
                         <Card
                             title="Soluções em Pagamento"
                             imageUrl={ `${process.env.PUBLIC_URL}/images/gestao_financeira.png` }
@@ -48,33 +49,17 @@ const OurServices = props => {
                     </div>
                 </div>
             </Section>
-            {/* <ServiceInfo data={
-                {
-                    title: "Análise de Crédito",
-                    subtitle: "Entendemos problemas e apontamos caminhos",
-                    description: "Nossos especialistas possuem expertise, técnicas e ferramentas necessárias para entender a realidade do seu negócio, identificar oportunidades e necessidades de melhoria e apontar os melhores caminhos para resolver problemas.",
-                    tags: [
-                        {
-                            icon: 'coffee',
-                            text: 'Entendemos problemas e apontamos caminhos'
-                        },
-                        {
-                            icon: 'coffee',
-                            text: 'Entendemos problemas e apontamos caminhos'
-                        },
-                        {
-                            icon: 'coffee',
-                            text: 'Entendemos problemas e apontamos caminhos'
-                        },
-                        {
-                            icon: 'coffee',
-                            text: 'Entendemos problemas e apontamos caminhos'
-                        }
-                    ]
-                }
-            } /> */}
+            <GoToTop />
         </div>
     )
+}
+
+OurServices.propTypes = {
+    asPage: PropTypes.bool
+}
+
+OurServices.defaultProps = {
+    asPage: false
 }
 
 export default OurServices

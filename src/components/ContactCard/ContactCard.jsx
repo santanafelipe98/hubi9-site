@@ -15,7 +15,7 @@ const ContactCard = props => (
 )
 
 ContactCard.propTypes = {
-    icon: PropTypes.oneOfType([ PropTypes.string, PropTypes.arrayOf(PropTypes.string) ]),
+    icon: PropTypes.oneOfType([ PropTypes.string, PropTypes.arrayOf(PropTypes.string), PropTypes.any ]),
     title: PropTypes.string,
     text: PropTypes.string,
     linkTo: PropTypes.string

@@ -3,6 +3,8 @@ import '../styles/global.css'
 import ServiceDetails from '../components/ServiceDetails'
 import { ServiceInfo } from '../components/ServiceInfo'
 
+import GoToTop from '../components/GoToTop'
+
 const IMAGE_URL = `${process.env.PUBLIC_URL}/images/gestao_financeira.png`
 
 const PaymentoSolutions = props => {
@@ -64,6 +66,7 @@ const PaymentoSolutions = props => {
                         )
                 }
             </div>
+            <GoToTop />
         </>
     )
 }

@@ -52,3 +52,46 @@
     font-size: 17px;
     padding: 6px 20px;
 }
+
+@media screen and (max-width: 991.8px) {
+    .serviceDetailsHeading {
+        width: 80%;
+        font-size: 32px;
+    }
+
+    .serviceDetailsDesc p {
+        width: 80%;
+        margin-bottom: 16px;
+        line-height: 150%;
+    }
+
+    .ServiceDetails .tags {
+        width: 80%;
+    }
+
+    .ServiceDetails .btnAction {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 767.8px) {
+    .serviceDetailsHeading {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    
+    .ServiceDetails .tags {
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+    .serviceDetailsDesc p {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .ServiceDetails .btnAction {
+        padding-top: 8px;
+        font-size: 14px;
+    }
+}

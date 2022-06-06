@@ -46,3 +46,34 @@
     transform: scale(1.1);
 }
 
+.ContactUs .buttonWrapper {
+    display: flex;
+}
+
+@media screen and (max-width: 967.8px) {
+    .contactUsThumb {
+        margin-bottom: 50px;
+    }
+
+    .contactUsHeading, .contactUsText {
+        text-align: center;
+    }
+
+    .ContactUs .buttonWrapper {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contactUsHeader {
+        padding-top: 50px;
+    }
+
+    .contactUsHeading {
+        font-size: 22px;
+    }
+
+    .contactUsText {
+        font-size: 15px;
+    }
+}

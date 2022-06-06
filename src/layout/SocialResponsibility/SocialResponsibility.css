@@ -1,0 +1,64 @@
+.SocialResponsibility{
+    padding: 100px 0;
+}
+
+.SocialResponsibility .Button {
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.SocialResponsibility .Button:hover {
+    color: #fff;
+}
+
+.socialResponsibilityThumb {
+    overflow: hidden;
+    margin: 37px 0 0 0;
+    border-radius: 20px 60px 20px 20px;
+}
+
+.socialResponsibilityHeading, .socialResponsibilityText {
+    color: #343a40;
+}
+
+.socialResponsibilityHeading {
+    margin-bottom: 20px;
+}
+
+.socialResponsibilityText {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.SocialResponsibility .buttonWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socialResponsibilityThumb img {
+    width: 100%;
+    transition: transform .5s ease-in-out;
+}
+
+.socialResponsibilityThumb:hover img {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 961px) {
+    .socialResponsibilityThumb {
+        margin-bottom: 50px;
+    }
+
+    .socialResponsibilityHeading {
+        text-align: center;
+    }
+
+    .SocialResponsibility .buttonWrapper {
+        justify-content: center;
+    }
+}

@@ -46,9 +46,22 @@
     margin-bottom: 24px;
     font-size: 16px;
     text-align: center;
-    color: #00b2ff;
+    color: var(--primary-color);
 }
 
 .Card .cardContent .buttonMoreInfo {
     margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1181.8px) {
+    .Card .cardThumb img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 967.8px) {
+    .Card .cardThumb img {
+        height: auto;
+    }
 }

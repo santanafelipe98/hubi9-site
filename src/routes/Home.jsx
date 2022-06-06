@@ -4,6 +4,7 @@ import Jumbotron from '../layout/Jumbotron'
 import OurServices from './OurServices'
 import OurCustomers from './OurCustomers'
 import HowItWorks from './HowItWorks'
+import SocialResponsibility from '../layout/SocialResponsibility'
 
 const Home = props => (
     <div className="Home">
@@ -11,6 +12,7 @@ const Home = props => (
         <OurServices />
         <HowItWorks />
         <OurCustomers />
+        <SocialResponsibility />
     </div>
 )
 

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import ServiceTag from './ServiceTag'
-import {Button} from '../Button'
+import {Button,ButtonLink} from '../Button'
 
 import './ServiceInfo.css'
 
@@ -12,6 +12,7 @@ const ServiceInfo = props => {
 
     return (
         <div className="ServiceInfo">
+            <ButtonLink to="/">Voltar ao início</ButtonLink>
             <div className="heading">Serviços</div>
             <h2 className="serviceInfoTitle">{ props.data.title }</h2>
             <h3 className="serviceInfoSubtitle">{ props.data.subtitle }</h3>

@@ -8,7 +8,34 @@
     margin-top: 40px;
     margin-bottom: 48px;
     text-align: center;
-    color: #f8f9fa;
     font-size: 48px;
     letter-spacing: -1px;
+}
+
+.Section.visible .sectionTitle {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Section .sectionTitle.dark {
+    color: #f8f9fa;
+}
+.Section .sectionTitle.light {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 991.8px) {
+    .Section .sectionTitle {
+        margin-bottom: 32px;
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 768.8px) {
+    .Section .sectionTitle {
+        margin-top: 40px;
+        margin-bottom: 24px;
+        font-size: 32px;
+    }
 }

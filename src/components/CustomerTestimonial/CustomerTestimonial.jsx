@@ -8,7 +8,7 @@ const CustomerTestimonial = props => (
         <div className="testimonialText">
             { props.text }
         </div>
-        <div className="testimonialAuthor">{ props.author }</div>
+        <div className="testimonialAuthor"><strong>{ props.author }</strong></div>
     </div>
 )
 

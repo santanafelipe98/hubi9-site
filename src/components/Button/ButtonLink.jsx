@@ -23,7 +23,7 @@ const ButtonLink = props => {
     }, [ props.variant, props.className ])
 
     return (
-        <Link className={className}  to={props.to}>{ props.children }</Link>
+        <Link className={className} onClick={props.onClick}  to={props.to}>{ props.children }</Link>
     )
 }
 

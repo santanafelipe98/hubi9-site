@@ -1,24 +1,13 @@
-import React, { useState, useCallback } from 'react'
+import React from 'react'
 import Section from '../components/Section'
-import {
-    Tabs,
-    Tab,
-    TabList,
-    TabPanel
-} from '../components/Tabs'
 import { Step } from '../components/Step'
+import GoToTop from '../components/GoToTop'
 
 import '../styles/HowItWorks.css'
 
 const HowItWorks = props => {
-    const [ activeTabIndex, setActiveTabIndex ] = useState(0)
-
-    const handleSelect = useCallback((index) => {
-        setActiveTabIndex(index)
-    }, [ setActiveTabIndex ])
-
     return (
-        <Section className="HowItWorks" title="Como funciona a adesão?">
+        <Section className="HowItWorks" title="Como contratar?" theme='light'>
             <Step
                 title="Passo 01"
                 text="Você pode criar vários departamentos de videoatendimento e distribuir a chamada para a equipe correta. Pode distribuir por geolocalização, por horário de atendimento ou por segmentação de produto."
@@ -37,6 +26,7 @@ const HowItWorks = props => {
                 direction="rt"
                 text="Integre a NuVidio com informações de terceiros através de API´s e hooks."
                 imageUrl={`${process.env.PUBLIC_URL}/images/passo_04.png`}></Step>
+            <GoToTop />
         </Section>
     )
 }

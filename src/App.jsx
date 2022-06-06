@@ -23,7 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={ <Home /> }>
             </Route>
-            <Route path="servicos" element={ <OurServices /> } />
+            <Route path="servicos" element={ <OurServices asPage /> } />
             <Route path="servicos/analise-de-credito" element={ <CreditAnalysis /> } />
             <Route path="servicos/recuperacao-de-recebiveis" element={ <RecoveryOfReceivables /> } />
             <Route path="servicos/protesto-de-titulos" element={ <TitleProtest /> } />

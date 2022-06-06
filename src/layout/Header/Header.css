@@ -1,9 +1,10 @@
 .Header {
-    background: #333;
+    background: rgba(33,37,41,.95);
     height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
 }
 
 .navbarFixed {
@@ -29,4 +30,31 @@
     margin: 2px 12px;
     width: auto;
     min-width: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .Header .navbarNav {
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        left: 0;
+        right: 0;
+        z-index: 99;
+        height: 100vh;
+        background: rgba(51, 51, 51, 0.95);
+        visibility: hidden;
+        transition: transform .3s ease-in-out;
+    }
+
+    .Header .navbarNav.active {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        background: #333;
+        top: 60px;
+        transform: translateY(0);
+    }
+
+
 }
