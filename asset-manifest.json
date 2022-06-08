@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hubi9-site/static/css/main.1d9a7615.css",
-    "main.js": "/hubi9-site/static/js/main.a03a783c.js",
+    "main.css": "/hubi9-site/static/css/main.8a09c37f.css",
+    "main.js": "/hubi9-site/static/js/main.b014ac2a.js",
     "static/js/787.756747f9.chunk.js": "/hubi9-site/static/js/787.756747f9.chunk.js",
     "static/media/video_service.webp": "/hubi9-site/static/media/video_service.e96eaffa657c2d344df9.webp",
     "index.html": "/hubi9-site/index.html",
-    "main.1d9a7615.css.map": "/hubi9-site/static/css/main.1d9a7615.css.map",
-    "main.a03a783c.js.map": "/hubi9-site/static/js/main.a03a783c.js.map",
+    "main.8a09c37f.css.map": "/hubi9-site/static/css/main.8a09c37f.css.map",
+    "main.b014ac2a.js.map": "/hubi9-site/static/js/main.b014ac2a.js.map",
     "787.756747f9.chunk.js.map": "/hubi9-site/static/js/787.756747f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d9a7615.css",
-    "static/js/main.a03a783c.js"
+    "static/css/main.8a09c37f.css",
+    "static/js/main.b014ac2a.js"
   ]
 }
