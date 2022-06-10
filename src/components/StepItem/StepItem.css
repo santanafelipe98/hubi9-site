@@ -1,0 +1,62 @@
+.StepItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.StepItem .stepWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.StepItem.lt .stepWrapper {
+    flex-direction: row;
+}
+
+.StepItem.rt .stepWrapper {
+    flex-direction: row-reverse;
+}
+
+.StepItem.lt .icon {
+    margin-right: 1.5rem;
+}
+.StepItem.rt .icon {
+    margin-left: 1.5rem;
+}
+
+.StepItem .icon {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    box-shadow: 0 0 2.1875rem 0 rgba(119, 119, 120, 0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-shrink: 0;
+    height: 8.75rem;
+    width: 8.75rem;
+    transition: transform .3s ease-in-out;
+}
+
+.StepItem .icon:hover {
+    transform: scale(1.2);
+}
+
+.StepItem.lt .textContent h5, .StepItem.lt .textContent p {
+    text-align: left;
+}
+
+.StepItem.rt .textContent h5, .StepItem.rt .textContent p {
+    text-align: right;
+}
+
+.StepItem .textContent h5 {
+    font-size: 1.1725rem;
+    line-height: 1.25;
+    color: var(--primary-color);
+    margin-bottom: 0.938rem;
+}
+
+.StepItem .textContent p {
+    color: #696969;
+}

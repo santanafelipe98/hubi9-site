@@ -1,0 +1,16 @@
+.BenefitItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.BenefitItem .icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.benefitText {
+    font-size: .9rem;
+    text-align: justify;
+}

@@ -1,0 +1,16 @@
+Jumbotron reduzir transparencia do vídeo OK
+Barra de navegação - Mudar pra roxa ou transparente OK
+Computador seguindo padrão OK
+Banner clientes OK
+Contato OK
+Mudar borda dos card contatos na mesma largura dos outros OK
+Tirar Tags dos serviços OK
+Mudar dividers para amarelo OK
+Banner
+mudar cor do banner dos tutoriais OK
+diminuir rodapé OK
+
+Serviços
+Nossas consultas
+
+Criar popup com os detalhes da consulta com 10 ou 15 exemplos

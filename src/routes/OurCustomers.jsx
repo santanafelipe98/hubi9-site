@@ -2,40 +2,50 @@ import React, { useCallback } from 'react'
 
 import '../styles/OurCustomers.css'
 
-import CustomerTestimonial from '../components/CustomerTestimonial'
 import GoToTop from '../components/GoToTop'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
 
 const OurCustomers = props => {
-    const renderIndicator = useCallback((clickHandler, isSelected) => (
-        <div onClick={clickHandler} className={ `indicator ${isSelected ? 'active' : ''}`}></div>
-    ), [])
+
+    const properties = {
+        duration: 3000,
+        slidesToShow: 8,
+        slidesToScroll: 2,
+        autoplay: true,
+        indicators: true,
+        arrows: false,
+        indicators: false,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1
+            }
+        }]
+    };
 
     return (
         <div id="cases" className="OurCustomers">
-            <FontAwesomeIcon className="quoteIcon" icon={faQuoteLeft} size="6x" color="#600ab3" />
-            <Carousel
-                autoPlay={true}
-                infiniteLoop={true}
-                showArrows={false}
-                showThumbs={false}
-                showStatus={false}
-                interval={5000}
-                renderIndicator={renderIndicator}
-                dynamicHeight={true}>
-                <CustomerTestimonial
-                    text="Somos parceiros há anos, desde o início da ZigPay. Possuem uma equipe jovem e arrojada. O acompanhamento é constante, desde o desenvolvimento das ideias até a finalização do serviço/produto. Tudo com muito profissionalismo e agilidade."
-                    author="Lorem Ipsum" />
-                <CustomerTestimonial
-                    text="Somos parceiros há anos, desde o início da ZigPay. Possuem uma equipe jovem e arrojada. O acompanhamento é constante, desde o desenvolvimento das ideias até a finalização do serviço/produto. Tudo com muito profissionalismo e agilidade."
-                    author="Lorem Ipsum" />
-                <CustomerTestimonial
-                    text="Somos parceiros há anos, desde o início da ZigPay. Possuem uma equipe jovem e arrojada. O acompanhamento é constante, desde o desenvolvimento das ideias até a finalização do serviço/produto. Tudo com muito profissionalismo e agilidade."
-                    author="Lorem Ipsum" />
-            </Carousel>
+            <h2 className="ourCustomersTitle">Nossos valiosos clientes</h2>
+            <Slide
+                {...properties}
+                className="slider">
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/arezzo.png`} alt="Logomarca da Arezzo" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/boticario.png`} alt="Logomarca da Boticário" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/consul.png`} alt="Logomarca da Consul" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/friboi.png`} alt="Logomarca da Friboi" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/apae.png`} alt="Logomarca da APAE" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/brasfer.png`} alt="Logomarca da BRASFER" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/eletrica_bahiana.png`} alt="Logomarca da Elétrica Bahiana" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/ifood.png`} alt="Logomarca da ifood" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/intelbras.png`} alt="Logomarca da Intelbras" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/kibon.png`} alt="Logomarca da Kibon" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/tramontina.png`} alt="Logomarca da Tramontina" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/salesiano.png`} alt="Logomarca da Salesiano" />
+                    <img className="image" src={`${process.env.PUBLIC_URL}/images/maxi_atacado.png`} alt="Logomarca da Maxi Atacado" />
+            </Slide>
             <GoToTop />
         </div>
     )

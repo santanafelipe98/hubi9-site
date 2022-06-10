@@ -1,11 +1,8 @@
-import React, { useCallback, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import './ServiceDetails.css'
 
 import Divider from '../Divider'
-import Tag from '../Tag'
-
 import PropTypes from 'prop-types'
-import { Button } from '../Button'
 
 const ServiceDetails = props => {
     const headerStyles = useMemo(() => ({
@@ -16,28 +13,22 @@ const ServiceDetails = props => {
         backgroundAttachment: 'scroll,fixed'
     }), [ props.backgroundImage ])
 
-    const renderTag = useCallback((tag, i) => (
-        <Tag key={`Tag_${i}`}>{ tag }</Tag>
-    ))
-
-    const tags = props.tags || []
-
     return (
         <div className="ServiceDetails">
             <section style={headerStyles} className="serviceDetailsHeader">
-                <Divider />
+                <Divider color="var(--secondary-color)" />
                 <h1 className="serviceDetailsHeading">{ props.title }</h1>
-                <Divider />
-
-                <div className="tags">
-                    { tags.map(renderTag) }
-                </div>
+                <Divider color="var(--secondary-color)" />
             </section>
             <section className="serviceDetailsDesc">
                 <h1 className="serviceDetailsHeading">{ props.title }</h1>
-                <Divider color="#fff" />
-                <p>{  props.text }</p>
-                { props.showActionButton && <Button className="btnAction" variant="secondary" onClick={props.onAction}>Solicitar orçamento</Button> }
+                <Divider color="var(--secondary-color)" />
+                {
+                    typeof props.text === "string"
+                        ?  <p>{ props.text }</p>
+                    : props.text
+                
+                }
             </section>
         </div>
     )
@@ -48,14 +39,8 @@ ServiceDetails.propTypes = {
     title: PropTypes.string,
     subtitile: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string),
-    text: PropTypes.string,
+    text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
     backgroundImage: PropTypes.string,
-    showActionButton: PropTypes.bool,
-    onAction: PropTypes.func
-}
-
-ServiceDetails.defaultProps = {
-    showActionButton: true
 }
 
 export default ServiceDetails

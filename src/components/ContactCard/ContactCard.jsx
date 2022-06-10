@@ -8,7 +8,7 @@ const ContactCard = props => (
     <div className="ContactCard">
         <FontAwesomeIcon icon={props.icon} size="3x" color="#000" />
         <h3 className="contactCardTitle">
-            <a href={ props.linkTo || '#' }>{ props.title }</a>
+            <a href={ props.linkTo || '#' } target="_blank">{ props.title }</a>
         </h3>
         <div className="contactCardText">{ props.text }</div>
     </div>

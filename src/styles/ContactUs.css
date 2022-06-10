@@ -6,6 +6,7 @@
 .contactUsHeader {
     background: var(--primary-color);
     padding: 150px 50px 100px 50px;
+    min-height: 450px;
 }
 
 .contactWays {
@@ -48,6 +49,13 @@
 
 .ContactUs .buttonWrapper {
     display: flex;
+}
+
+.ContactUs .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 967.8px) {

@@ -8,6 +8,7 @@ import HamburguerButton from '../../components/HamburguerButton'
 
 const Header = props => {
     const [ openMenu, setOpenMenu ] = useState(false)
+    const [ alpha, setAlpha ] = useState(0)
 
     useEffect(() => {
         const handleResize = () => {
@@ -19,10 +20,22 @@ const Header = props => {
                 setOpenMenu(false)
         }
 
-        window.addEventListener('resize', handleResize)
+        const handleScroll = () => {
+            let y     = window.scrollY
+            let value = Math.min(300, y / 300)
 
-        return () => window.removeEventListener('resize', handleResize)
+            setAlpha(value)
+        }
+
+        window.addEventListener('resize', handleResize)
+        window.addEventListener('scroll', handleScroll)
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+            window.removeEventListener('scroll', handleScroll)
+        }
     }, [])
+
 
     const className = useMemo(() => {
         let classes = 'Header'
@@ -38,7 +51,9 @@ const Header = props => {
     }, [setOpenMenu])
 
     return (
-        <header className={ className }>
+        <header style={{
+            backgroundColor: `rgba(33,37,41, ${alpha})`
+        }} className={ className }>
             <div className="container">
                 <div className="brand">
                     <Link to="/#"><img src={ `${process.env.PUBLIC_URL}/images/logotipo_colorido.png` } alt="Logotipo hubi9" /></Link>

@@ -22,6 +22,12 @@ const ButtonLink = props => {
         return classes
     }, [ props.variant, props.className ])
 
+    if (props.target) {
+        return (
+            <a className={className} onClick={props.onClick} href={props.to} target={props.target}>{props.children}</a>   
+        )
+    }
+
     return (
         <Link className={className} onClick={props.onClick}  to={props.to}>{ props.children }</Link>
     )

@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import 'react-responsive-modal/styles.css'
 import 'bootstrap-grid-only-css/dist/css/bootstrap-grid.min.css'
 import './index.css'
 import App from './App'

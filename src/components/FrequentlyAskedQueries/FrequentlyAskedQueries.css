@@ -1,0 +1,15 @@
+.FrequentlyAskedQueries .sectionDescription {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.questionIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.questionIcon img {
+    width: 100%;
+}

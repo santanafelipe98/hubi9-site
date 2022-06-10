@@ -5,7 +5,7 @@
     height: 53.4px;
     border-radius: 27px;
     cursor: pointer;
-    background: var(--secondary-color);
+    background: #00b2ff;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, .3);
     color: #fff;
     width: 240px;

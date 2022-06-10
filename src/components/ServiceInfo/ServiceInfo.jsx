@@ -1,43 +1,41 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import ServiceTag from './ServiceTag'
-import {Button,ButtonLink} from '../Button'
+import { ButtonLink } from '../Button'
+import QueryCard from '../QueryCard'
+import Divider from '../Divider'
 
 import './ServiceInfo.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { useLocation } from 'react-router-dom'
 
 const ServiceInfo = props => {
-    const renderTag = (tag, i) => (
-        <ServiceTag key={ `tag${i}` } icon={tag.icon} text={tag.text} />
-    )
+    const location = useLocation()
 
     return (
         <div className="ServiceInfo">
-            <ButtonLink to="/">Voltar ao início</ButtonLink>
-            <div className="heading">Serviços</div>
-            <h2 className="serviceInfoTitle">{ props.data.title }</h2>
-            <h3 className="serviceInfoSubtitle">{ props.data.subtitle }</h3>
-            <p className="serviceInfoDescription">{ props.data.description }</p>
-
-            <div className="container serviceInfoTags">
-                { props.data.tags.map(renderTag) }
+            <div className="serviceInfoHeader">
+                <ButtonLink to={location.pathname}><FontAwesomeIcon icon={ faArrowLeft } color="#fff" size="2x"/></ButtonLink>
+                <h2 className="serviceInfoTitle">{ props.data.title }</h2>
+                <Divider height="2px" color="var(--secondary-color)" />
             </div>
 
-            <Button className="serviceInfoButton" variant="primary">Solicitar orçamento</Button>
+            { props.children }
         </div>
     )
-}
-
-ServiceInfo.defaultProps = {
-    tags: []
 }
 
 ServiceInfo.propTypes = {
     data: PropTypes.shape({
         title: PropTypes.string,
         subititle: PropTypes.string,
-        description: PropTypes.string,
-        tags: PropTypes.array
-    })
+        cards: PropTypes.arrayOf(PropTypes.shape({
+            icon: PropTypes.string,
+            title: PropTypes.string,
+            onActionClick: PropTypes.func
+        }))
+    }),
+    returnsToURL: PropTypes.string
 }
 
 export default ServiceInfo

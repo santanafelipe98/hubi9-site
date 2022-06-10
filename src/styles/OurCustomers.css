@@ -1,11 +1,21 @@
 .OurCustomers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    min-height: 200px;
     position: relative;
-    background-image: linear-gradient(180deg,#f8f9fa,rgba(233,236,239,0) 50%),linear-gradient(180deg,#e9ecef,#e9ecef);
+    background: var(--primary-color);
+}
+
+.OurCustomers .slider {
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ourCustomersTitle {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .OurCustomers .indicator {
@@ -25,22 +35,19 @@
     margin-right: 12px;
 }
 
+.OurCustomers img.image {
+    width: 64px;
+    margin-right: 10px;
+}
+
 
 .OurCustomers .quoteIcon {
     position: absolute;
     top: -50px;
 }
 
-@media screen and (max-width: 961.8px) {
-    .OurCustomers .indicator {
-        width: 10px;
-        height: 10px;
-    }
-}
-
-@media screen and (max-width: 767.8px) {
-    .OurCustomers .indicator {
-        width: 9px;
-        height: 9px;
+@media screen and (max-width: 540px) {
+    .OurCustomers img.slide {
+        width: 64px;
     }
 }

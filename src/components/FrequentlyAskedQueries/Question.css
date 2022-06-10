@@ -1,0 +1,53 @@
+.Question {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.questionHeader {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+}
+
+.questionTitle {
+    flex: 1;
+    color: #fff;
+}
+
+.buttonCollapse {
+    background: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.answerWrapper {
+    background: #f5f5f5;
+    color: #696969;
+    overflow: hidden;
+    text-align: justify;
+    height: auto;
+    font-size: 14px;
+    max-height: 500px;
+    transition: max-height .5s ease-in-out;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.answerWrapper span {
+    display: inline-block;
+    margin: 20px;
+}
+
+.answerWrapper.hidden {
+    max-height: 0;
+}

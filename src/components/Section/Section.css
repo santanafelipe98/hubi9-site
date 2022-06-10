@@ -2,15 +2,21 @@
     padding-bottom: 89px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .Section .sectionTitle {
     margin-top: 40px;
-    margin-bottom: 48px;
     text-align: center;
     font-size: 48px;
     letter-spacing: -1px;
 }
+
+.Section .Divider {
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
 
 .Section.visible .sectionTitle {
     opacity: 1;

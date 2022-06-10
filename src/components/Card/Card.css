@@ -46,7 +46,7 @@
     margin-bottom: 24px;
     font-size: 16px;
     text-align: center;
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .Card .cardContent .buttonMoreInfo {

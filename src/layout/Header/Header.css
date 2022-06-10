@@ -1,6 +1,5 @@
 .Header {
-    background: rgba(33,37,41,.95);
-    height: 60px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,7 +22,7 @@
 }
 
 .Header .brand img {
-    width: 100px;
+    width: 110px;
 }
 
 .Header .navbarNav .navbarNavLink {

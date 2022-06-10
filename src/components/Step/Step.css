@@ -1,5 +1,9 @@
 .Step {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+}
+
+.Step .StepCard {
+    width: 80%;
 }
 
 .Step .hidden {
@@ -42,6 +46,12 @@
     to {
         opacity: 1;
         transition: translateX(0);
+    }
+}
+
+@media screen and (max-wdith: 991.8px) {
+    .Step .StepCard {
+        width: 100%;
     }
 }
 

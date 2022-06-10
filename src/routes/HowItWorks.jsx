@@ -16,16 +16,16 @@ const HowItWorks = props => {
                 title="Passo 02"
                 direction="rt"
                 text="Saiba o que está acontecendo no atendimento em tempo real. Veja quantos clientes estão esperando, quantas chamadas estão em andamento e muito mais!"
-                imageUrl={`${process.env.PUBLIC_URL}/images/passo_02.png`}></Step>
+                imageUrl={`${process.env.PUBLIC_URL}/images/passo_01.png`}></Step>
             <Step
                 title="Passo 03"
                 text="Veja toda a jornada do seu cliente, com todas as informações que foram trocadas durante o videoatendimento."
-                imageUrl={`${process.env.PUBLIC_URL}/images/passo_03.png`}></Step>
+                imageUrl={`${process.env.PUBLIC_URL}/images/passo_01.png`}></Step>
             <Step
                 title="Passo 04"
                 direction="rt"
                 text="Integre a NuVidio com informações de terceiros através de API´s e hooks."
-                imageUrl={`${process.env.PUBLIC_URL}/images/passo_04.png`}></Step>
+                imageUrl={`${process.env.PUBLIC_URL}/images/passo_01.png`}></Step>
             <GoToTop />
         </Section>
     )

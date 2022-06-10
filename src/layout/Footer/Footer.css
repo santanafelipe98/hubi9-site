@@ -1,25 +1,33 @@
 footer {
-    min-height: 200px;
+    min-height: 100px;
     background: #333;
     display: flex;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 footer .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
+footer .SocialMedia {
+    justify-content: center;
+    margin-left: calc(50% - 200px);
+}
+
 footer .footerBrand {
-    width: 200px;
+    width: 160px;
 }
 
 @media screen and (max-width: 961px) {
     footer .container {
         flex-direction: column;
+    }
+
+    footer .SocialMedia {
+        margin-left: 0;
     }
 
     footer .footerBrand {

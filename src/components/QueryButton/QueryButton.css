@@ -1,0 +1,35 @@
+.QueryButton {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease, transform .3s ease;
+    
+}
+
+.QueryButton:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.QueryButton img {
+    width: 100%;
+}
+
+.QueryButton span.text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #303040;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    color: var(--primary-color);
+}

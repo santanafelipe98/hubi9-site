@@ -7,11 +7,15 @@
 .stepCardTitle {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #fff;
 }
 
 .stepCardText {
     font-size: 15px;
     font-weight: 500;
     line-height: 1.6em;
+    text-align: justify;
+}
+
+.stepCardTitle, .stepCardText {
+    color: #fff;
 }

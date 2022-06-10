@@ -1,0 +1,14 @@
+.ourQueries .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CreditAnalysis .banner {
+    display: flex;
+    justify-content: center;
+}
+
+.ourQueries .QueryButton:not(:last-child) {
+    margin-right: 20px;
+}

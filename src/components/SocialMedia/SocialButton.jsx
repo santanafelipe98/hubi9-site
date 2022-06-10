@@ -5,11 +5,10 @@ import './SocialButton.css'
 import PropTypes from 'prop-types'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const SocialButton = props => {
     return (
-        <a className="SocialButton" href={ props.url }>
+        <a className="SocialButton" href={ props.url } target="_blank">
             <FontAwesomeIcon icon={["fab", props.icon]} size="lg"  />
         </a>
     )

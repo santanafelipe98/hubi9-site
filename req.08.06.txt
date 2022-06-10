@@ -1,0 +1,10 @@
+Justificar texto card
+Diminuir imagens do carousel
+Colocar texto (primeiro parágrafo) de responsabilidade social numa caixa branca com metade do carousel e imagem de fundo
+Aumentar logotipo da hubi9 (cabeçalho)
+Card Consultas PF, Pf
+Add borda amarela nos cards das consultas OK
+Remover planos OK
+Substituir botão voltar ao início por uma seta apontado para serviços OK
+Alterar contato (deixar com imagem de fundo atrás
+Diminuir espaço dos cards tutorial

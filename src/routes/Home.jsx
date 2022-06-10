@@ -11,8 +11,8 @@ const Home = props => (
         <Jumbotron />
         <OurServices />
         <HowItWorks />
-        <OurCustomers />
         <SocialResponsibility />
+        <OurCustomers />
     </div>
 )
 

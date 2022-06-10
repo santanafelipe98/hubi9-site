@@ -1,15 +1,23 @@
 .ServiceInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 64px 0;
     min-height: 90vh;
     border: 3px solid #343a40;
     border-radius: 24px;
     margin: 50px 24px;
     transition: border-color .6s ease;
+}
+
+.ServiceInfo .serviceInfoHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.serviceInfoHeader .Divider {
+    width: 200px !important;
+    margin-bottom: 50px;
 }
 
 .ServiceInfo:hover {
