@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hubi9-site/static/css/main.48a2c9ee.css",
-    "main.js": "/hubi9-site/static/js/main.c87b0774.js",
+    "main.css": "/hubi9-site/static/css/main.cc4b30bc.css",
+    "main.js": "/hubi9-site/static/js/main.43908145.js",
     "static/js/787.756747f9.chunk.js": "/hubi9-site/static/js/787.756747f9.chunk.js",
     "static/media/video_service.webp": "/hubi9-site/static/media/video_service.e96eaffa657c2d344df9.webp",
     "static/media/slick.svg": "/hubi9-site/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,12 +9,12 @@
     "static/media/slick.ttf": "/hubi9-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/hubi9-site/index.html",
     "static/media/slick.woff": "/hubi9-site/static/media/slick.295183786cd8a1389865.woff",
-    "main.48a2c9ee.css.map": "/hubi9-site/static/css/main.48a2c9ee.css.map",
-    "main.c87b0774.js.map": "/hubi9-site/static/js/main.c87b0774.js.map",
+    "main.cc4b30bc.css.map": "/hubi9-site/static/css/main.cc4b30bc.css.map",
+    "main.43908145.js.map": "/hubi9-site/static/js/main.43908145.js.map",
     "787.756747f9.chunk.js.map": "/hubi9-site/static/js/787.756747f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48a2c9ee.css",
-    "static/js/main.c87b0774.js"
+    "static/css/main.cc4b30bc.css",
+    "static/js/main.43908145.js"
   ]
 }
